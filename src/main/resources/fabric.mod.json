@@ -13,7 +13,7 @@
   "license": "MIT",
   "environment": "*",
   "mixins": [
-    "modid.mixins.json"
+    "no-paus.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.17",
