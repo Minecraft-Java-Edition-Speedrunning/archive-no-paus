@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 
 @Mixin(GameOptions.class)
 public class GameOptionsMixin {
-	@Inject(at = @At(value = "INVOKE", target = "Ljava/io/PrintWriter;println(Ljava/lang/String;)V", ordinal = 30, shift = At.Shift.AFTER), method = "save", locals = LocalCapture.CAPTURE_FAILHARD)
+	@Inject(at = @At(value = "INVOKE", target = "Ljava/io/PrintWriter;println(Ljava/lang/String;)V", ordinal = 29, shift = At.Shift.AFTER), method = "save", locals = LocalCapture.CAPTURE_FAILHARD)
 	private void savePauseOnLostFocus(CallbackInfo ci, PrintWriter printWriter) {
 		printWriter.println("pauseOnLostFocus:" + NoPaus.pauseOnLostFocus);
 	}
