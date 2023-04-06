@@ -1,5 +1,5 @@
 package xyz.tildejustin.nopaus;
 
 public class NoPaus {
-	public static boolean pauseOnLostFocus = true;
+    public static boolean pauseOnLostFocus = true;
 }
