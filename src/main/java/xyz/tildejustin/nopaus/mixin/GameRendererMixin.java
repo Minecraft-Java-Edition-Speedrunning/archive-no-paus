@@ -9,7 +9,13 @@ import xyz.tildejustin.nopaus.NoPaus;
 
 @Mixin(GameRenderer.class)
 public class GameRendererMixin {
-    @Redirect(method = "method_1331", at = @At(value = "INVOKE", target = "Lorg/lwjgl/opengl/Display;isActive()Z"))
+    @Redirect(
+            method = "method_1331",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lorg/lwjgl/opengl/Display;isActive()Z"
+            )
+    )
     private boolean redirectIsActive() {
         return Display.isActive() || !NoPaus.pauseOnLostFocus;
     }

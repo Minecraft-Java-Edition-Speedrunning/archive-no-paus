@@ -3,7 +3,7 @@
   "id": "no-paus",
   "version": "${version}",
   "name": "No Paus",
-  "description": "Adds pause on lost focus disabling functionality from 12w34a+ to earlier versions",
+  "description": "Adds pause on lost focus disabling functionality from 12w34a to earlier versions",
   "authors": [
     "tildejustin"
   ],

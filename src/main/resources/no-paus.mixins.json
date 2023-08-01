@@ -5,8 +5,8 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "GameOptionsMixin",
-    "MinecraftMixin",
-    "GameRendererMixin"
+    "GameRendererMixin",
+    "MinecraftMixin"
   ],
   "injectors": {
     "defaultRequire": 1,

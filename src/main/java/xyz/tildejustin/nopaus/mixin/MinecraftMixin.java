@@ -15,7 +15,14 @@ public abstract class MinecraftMixin {
     @Shadow
     public GameOptions options;
 
-    @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lorg/lwjgl/input/Keyboard;getEventKey()I", ordinal = 3))
+    @Inject(
+            method = "tick",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lorg/lwjgl/input/Keyboard;getEventKey()I",
+                    ordinal = 3
+            )
+    )
     private void checkPauseOnLostFocus(CallbackInfo ci) {
         if (Keyboard.getEventKey() == 25 && Keyboard.isKeyDown(61)) {
             NoPaus.pauseOnLostFocus = !NoPaus.pauseOnLostFocus;
