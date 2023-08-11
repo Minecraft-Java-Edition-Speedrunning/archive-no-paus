@@ -3,20 +3,21 @@
   "id": "no-paus",
   "version": "${version}",
   "name": "No Paus",
-  "description": "Adds pause on lost focus disabling functionality from 12w34a to earlier versions",
+  "description": "Backports pause on lost focus disabling functionality from 12w34a to earlier versions",
   "authors": [
     "tildejustin"
   ],
   "contact": {
-    "sources": "https://github.com/tildejustin/no-paus"
+    "sources": "https://github.com/tildejustin/no-paus",
+    "homepage": "https://modrinth.com/mod/no-paus",
+    "issues": "https://github.com/tildejustin/no-paus/issues"
   },
   "license": "MIT",
-  "environment": "*",
+  "environment": "client",
   "mixins": [
     "no-paus.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.12",
     "minecraft": "<1.4.2"
   }
 }

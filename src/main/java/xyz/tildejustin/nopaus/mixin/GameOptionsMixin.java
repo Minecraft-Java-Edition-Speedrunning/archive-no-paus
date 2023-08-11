@@ -27,13 +27,7 @@ public class GameOptionsMixin {
         printWriter.println("pauseOnLostFocus:" + NoPaus.pauseOnLostFocus);
     }
 
-    @ModifyVariable(
-            method = "load",
-            at = @At(
-                    value = "STORE",
-                    ordinal = 0
-            )
-    )
+    @ModifyVariable(method = "load", at = @At(value = "STORE", ordinal = 0))
     private String[] loadPauseOnLostFocus(String[] stringArray) {
         if (stringArray[0].equals("pauseOnLostFocus")) {
             NoPaus.pauseOnLostFocus = stringArray[1].equals("true");
