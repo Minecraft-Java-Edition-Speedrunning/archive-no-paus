@@ -1,5 +1,6 @@
-package xyz.tildejustin.nopaus.mixin;
+package dev.tildejustin.nopaus.mixin;
 
+import dev.tildejustin.nopaus.NoPaus;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.option.GameOptions;
 import org.lwjgl.input.Keyboard;
@@ -8,7 +9,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import xyz.tildejustin.nopaus.NoPaus;
 
 @Mixin(Minecraft.class)
 public abstract class MinecraftMixin {
