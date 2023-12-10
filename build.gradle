@@ -11,10 +11,24 @@ base {
     archivesName = archives_name
 }
 
+repositories {
+    maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots" }
+}
+
+loom {
+    decompilers {
+        vineflower {
+            options.put("mark-corresponding-synthetics", "1")
+            options.put("ind", "    ")
+        }
+    }
+}
+
 dependencies {
     minecraft libs.minecraft
     mappings legacy.yarn(libs.versions.minecraft.get(), libs.versions.yarn.build.get())
     modImplementation libs.fabric.loader
+    vineflowerDecompilerClasspath libs.vineflower
 }
 
 processResources {
