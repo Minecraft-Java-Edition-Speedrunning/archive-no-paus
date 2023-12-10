@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "nopaus",
+  "version": "${version}",
+  "name": "No Paus",
+  "description": "Adds pause on lost focus disabling functionality from 12w34a+ to earlier versions",
+  "authors": [
+    "tildejustin"
+  ],
+  "contact": {
+    "sources": "https://github.com/Legacy-Fabric/fabric-example-mod"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "modid.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "minecraft": "~1.3"
+  }
+}
